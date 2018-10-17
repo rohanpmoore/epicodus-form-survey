@@ -10,65 +10,73 @@
   </head>
   <body>
     <div class="container">
-      <h1>Survey Website</h1>
-      <form id="surveyForm">
+      <div id=surveyField>
+        <h1>Survey Website</h1>
+        <form id="surveyForm">
 
-        <div class="form-group">
-          <label for="fullName">Enter Full name:</label>
-          <input id="fullName" class="form-control" type="text">
-        </div>
+          <div class="form-group">
+            <label for="fullName">Enter Full name:</label>
+            <input id="fullName" class="form-control" type="text">
+          </div>
 
-        <div class="form-group">
-          <label for="born">Date of Birth:</label>
-          <input id="born" class="form-control" type="date">
-        </div>
+          <div class="form-group">
+            <label for="born">Date of Birth:</label>
+            <input id="born" class="form-control" type="date">
+          </div>
 
-        <div class="form-group">
-          <label for="beverage">Select your favorite drink:</label>
-          <select class="form-control" id="beverage">
-            <option>Beer</option>
-            <option>Booze</option>
-            <option>Spirits</option>
-            <option>Soda</option>
-            <option>Smoothie</option>
-            <option>Fruit Juice</option>
-            <option>Coffee</option>
-            <option>Tea</option>
-            <option>Milk</option>
-            <option>Water</option>
-          </select>
-        </div>
+          <div class="form-group">
+            <label for="beverage">Select your favorite drink:</label>
+            <select class="form-control" id="beverage">
+              <option>Beer</option>
+              <option>Booze</option>
+              <option>Spirits</option>
+              <option>Soda</option>
+              <option>Smoothie</option>
+              <option>Fruit Juice</option>
+              <option>Coffee</option>
+              <option>Tea</option>
+              <option>Milk</option>
+              <option>Water</option>
+            </select>
+          </div>
 
-        <div class="form-group">
-          <label for="color">What is your favorite color?</label>
-          <input id="color" class="form-control" type="color">
-        </div>
+          <div class="form-group">
+            <label for="color">What is your favorite color?</label>
+            <input id="color" class="form-control" type="color">
+          </div>
 
-        <div class="form-group">
-          <label for="gender">Select your gender:</label>
-          <div class="gender">
-            <div class="radio">
-              <label>
-                <input type="radio" name="gender" value="male" checked>
-                Male
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="gender" value="female">
-                Female
-              </label>
+          <div class="form-group">
+            <label for="gender">Select your gender:</label>
+            <div class="gender">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="gender" value="Male" checked>
+                  Male
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="gender" value="Female">
+                  Female
+                </label>
+              </div>
             </div>
           </div>
-        </div>
 
-      </form>
+          <button type="submit" class="btn">Submit Survey!</button>
+        </form>
+      </div>
 
-
-
-
-
-
+      <div id="infoReturn">
+        <h3>You inputted the following information:</h3>
+        <p>
+          Name: <span class="nameField"></span><br>
+          Date of Birth: <span class="birthField"></span><br>
+          Favorite Drink: <span class="drinkField"></span><br>
+          Favorite Color: <span class="colorField"></span><br>
+          Gender: <span class="genderField"></span>
+        </p>
+      </div>
     </div>
   </body>
 </html>
